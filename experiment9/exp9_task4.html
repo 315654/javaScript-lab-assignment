@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Name: Jai kumar | Roll: 2510303237 | Experiment 9 | Task 4 -->
+<html lang="en">
+<body>
+  <h3>Quick Quiz</h3>
+  <p>1. Which keyword makes a constant?</p>
+  <input type="radio" name="q1" value="let"> let
+  <input type="radio" name="q1" value="const"> const
+  <p>2. What does typeof 7 return?</p>
+  <input type="radio" name="q2" value="number"> number
+  <input type="radio" name="q2" value="string"> string
+  <br><br><button onclick="result()">Submit</button>
+  <p id="score"></p>
+  <script>function result() {
+      let score = 0;
+      const a1 = document.querySelector('input[name="q1"]:checked');
+      const a2 = document.querySelector('input[name="q2"]:checked');
+      if (a1 && a1.value === "const") score++;
+      if (a2 && a2.value === "number") score++;
+      const out = document.getElementById("score");
+      out.textContent = "Your score: " + score + " / 2";
+    }
+</script>
+</body>
+</html>

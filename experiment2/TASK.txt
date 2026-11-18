@@ -1,0 +1,5 @@
+Experiment 2: Operators, Type Conversion and a Calculator
+Task 1: Arithmetic, comparison and logical operators
+
+JavaScript: exp2_task1.js
+HTML: exp2_task1.html
